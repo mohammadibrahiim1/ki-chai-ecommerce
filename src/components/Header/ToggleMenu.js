@@ -29,7 +29,7 @@ export const ToggleMenu = () => {
           <Button className={classes.button}>All Category</Button>
         </Menu.Target>
 
-        <Menu.Dropdown >
+        <Menu.Dropdown>
           <Menu.Item component="a" href="https://mantine.dev">
             Mantine website
           </Menu.Item>

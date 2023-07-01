@@ -1,6 +1,6 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { Headeer } from "@/components/Header";
+import { Headeer } from "@/components/Navbar";
 
 export const metadata = {
   title: "Ki Chai",

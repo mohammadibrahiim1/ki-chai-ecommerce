@@ -14,6 +14,8 @@ const useStyles = createStyles({
     justifyContent: "space-evenly",
     alignItems: "start",
     gap: "15px",
+    backgroundColor: "#FFF",
+    padding: "15px",
   },
 });
 
