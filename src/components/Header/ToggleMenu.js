@@ -42,6 +42,38 @@ export const ToggleMenu = () => {
           >
             External link
           </Menu.Item>
+          <Menu.Item
+            icon={<IconExternalLink size={rem(14)} />}
+            component="a"
+            href="https://mantine.dev"
+            target="_blank"
+          >
+            External link
+          </Menu.Item>
+          <Menu.Item
+            icon={<IconExternalLink size={rem(14)} />}
+            component="a"
+            href="https://mantine.dev"
+            target="_blank"
+          >
+            External link
+          </Menu.Item>
+          <Menu.Item
+            icon={<IconExternalLink size={rem(14)} />}
+            component="a"
+            href="https://mantine.dev"
+            target="_blank"
+          >
+            External link
+          </Menu.Item>
+          <Menu.Item
+            icon={<IconExternalLink size={rem(14)} />}
+            component="a"
+            href="https://mantine.dev"
+            target="_blank"
+          >
+            External link
+          </Menu.Item>
         </Menu.Dropdown>
       </Menu>
     </div>
