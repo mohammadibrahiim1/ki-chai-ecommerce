@@ -2,7 +2,7 @@
 import React from "react";
 import { Headeer } from "./Header";
 import { CategoryMenu } from "./CategoryMenu";
-import { Link } from "./Link";
+import { Menu } from "./Menu";
 import { createStyles } from "@mantine/core";
 
 const useStyles = createStyles({
@@ -22,7 +22,7 @@ const Navbar = () => {
       <Headeer></Headeer>
       <div className={classes.navbar}>
         <CategoryMenu></CategoryMenu>
-        <Link></Link>
+        <Menu></Menu>
       </div>
     </div>
   );

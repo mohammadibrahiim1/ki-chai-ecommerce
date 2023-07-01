@@ -10,8 +10,8 @@ import {
   rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import Link from "next/link";
 import { useState } from "react";
-// import { MantineLogo } from "@mantine/ds";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -93,8 +93,7 @@ const useStyles = createStyles((theme) => ({
     },
   },
 }));
-
-export const Link = () => {
+export const Menu = () => {
   const links = [
     { link: "/shop", label: "Shop" },
     { link: "/contact", label: "Contact Us" },
@@ -111,7 +110,7 @@ export const Link = () => {
   const items = links.map((link) => (
     <Link
       key={link.label}
-      to={link.link}
+      href={link.link}
       className={cx(classes.link, {
         [classes.linkActive]: active === link.link,
       })}
