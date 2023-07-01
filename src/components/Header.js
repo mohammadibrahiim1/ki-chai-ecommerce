@@ -14,6 +14,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import Link from "next/link";
 import {
+  IconBuildingStore,
   IconHeartFilled,
   IconSearch,
   IconShoppingCart,
@@ -68,7 +69,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   search: {
-    width: "25%",
+    width: "50%",
   },
 
   link: {
@@ -121,6 +122,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const links = [
+  { link: "/checkout", label: "Checkout" },
+  { link: "/shop", label: "Shop" },
   { link: "/profile", label: <CgProfile className="h-6 w-6" /> },
   { link: "/myOrders", label: <IconHeartFilled className="h-6 w-6" /> },
   { link: "/cart", label: <IconShoppingCart className="h-6 w-6" /> },
@@ -149,7 +152,7 @@ export function Headeer() {
   ));
 
   return (
-    <Header height={HEADER_HEIGHT}  className={classes.root}>
+    <Header height={HEADER_HEIGHT} className={classes.root}>
       <div className={classes.header}>
         <Link href="/" className={classes.brand}>
           <span> KI Chai</span>

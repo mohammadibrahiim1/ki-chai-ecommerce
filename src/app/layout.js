@@ -1,11 +1,6 @@
-// import { Headeer } from "@/components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
-import { CategoryMenu } from "@/components/CategoryMenu";
-import Navbar from "@/components/Navbar";
-
-// const inter = Inter({ subsets: ["latin"] });
+import { Headeer } from "@/components/Header";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +11,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar></Navbar>
+        <Headeer></Headeer>
         {children}
         <Footer></Footer>
       </body>
