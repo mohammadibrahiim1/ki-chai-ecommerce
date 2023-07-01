@@ -19,35 +19,42 @@ import {
 //   IconArrowDownRight,
 // } from "@tabler/icons-react";
 
-// const useStyles = createStyles((theme) => ({
-//   root: {
-//     padding: `calc(${theme.spacing.xl} * 1.5)`,
-//   },
+const useStyles = createStyles((theme) => ({
+  // root: {
+  //   padding: `calc(${theme.spacing.xl} * 1.5)`,
+  // },
 
-//   value: {
-//     fontSize: rem(24),
-//     fontWeight: 700,
-//     lineHeight: 1,
-//   },
+  value: {
+    fontSize: rem(24),
+    fontWeight: 700,
+    lineHeight: 1,
+  },
 
-//   diff: {
-//     lineHeight: 1,
-//     display: "flex",
-//     alignItems: "center",
-//   },
+  diff: {
+    lineHeight: 1,
+    display: "flex",
+    alignItems: "center",
+  },
 
-//   icon: {
-//     color:
-//       theme.colorScheme === "dark"
-//         ? theme.colors.dark[3]
-//         : theme.colors.gray[4],
-//   },
+  icon: {
+    color:
+      theme.colorScheme === "dark"
+        ? theme.colors.dark[3]
+        : theme.colors.gray[4],
+  },
 
-//   title: {
-//     fontWeight: 700,
-//     textTransform: "uppercase",
-//   },
-// }));
+  card: {
+    width: "295px",
+    height: "95px",
+    borderRadius: "6px",
+    background: "#F38332",
+  },
+
+  title: {
+    fontWeight: 700,
+    textTransform: "uppercase",
+  },
+}));
 
 // const icons = {
 //   user: IconUserPlus,
@@ -64,7 +71,7 @@ import {
 //   },
 // ];
 export const HCard = () => {
-  // const { classes } = useStyles();
+  const { classes } = useStyles();
 
   return (
     <div>
@@ -78,6 +85,7 @@ export const HCard = () => {
         ></SimpleGrid>
       </div> */}
       <Card
+        className={classes.card}
         withBorder
         radius="md"
         padding="xl"
