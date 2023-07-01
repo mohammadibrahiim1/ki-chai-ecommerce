@@ -1,9 +1,11 @@
-import { Headeer } from "@/components/Header";
+// import { Headeer } from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
+import { CategoryMenu } from "@/components/CategoryMenu";
+import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,18 +13,10 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  // const res = await fetch("https://api.github.com/repos/vercel/next.js", {
-  //   cache: "no-store",
-  //   next: {
-  //     revalidate: 5,
-  //   },
-  // });
-  // const data = await res.json();
-  // console.log(data);
   return (
     <html lang="en">
       <body>
-        <Headeer></Headeer>
+        <Navbar></Navbar>
         {children}
         <Footer></Footer>
       </body>
